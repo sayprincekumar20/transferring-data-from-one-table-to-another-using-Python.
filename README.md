@@ -6,31 +6,32 @@ This Python script is designed to transfer data from the news table to the kf_do
 
 * MySQL Server: A running MySQL server with a database named NEWSINFO.
 
-MySQL Connector/Python: The mysql-connector-python library must be installed. Install it using pip if you haven't already:
+ * MySQL Connector/Python: The mysql-connector-python library must be installed. Install it using pip if you haven't already:
 
 bash
 Copy code
-pip install mysql-connector-python
+*                pip install mysql-connector-python
 Database Schema
-news Table:
+** news Table:
 
-portalid (int)
-town (varchar)
-news (text)
-date (date)
-kf_docmnt Table:
+* portalid (int)
+* town (varchar)
+* news (text)
+* date (date)
+  
+**  kf_docmnt Table:
 
-portalid (int)
-town (varchar)
-news (text)
-date (date)
+* portalid (int)
+* town (varchar)
+* news (text)
+* date (date)
 Ensure that both tables are correctly set up in your NEWSINFO database to match the schema outlined above.
 
-Script Overview
-Purpose
+## Script Overview
+
 The script transfers data from the news table to the kf_docmnt table. It retrieves all rows from the news table and inserts them into the kf_docmnt table.
 
-How It Works
+### How It Works
 Connect to the Database: Establishes a connection to the MySQL server and selects the NEWSINFO database.
 Retrieve Data: Executes a query to fetch all rows from the news table.
 Insert Data: Inserts the fetched rows into the kf_docmnt table.

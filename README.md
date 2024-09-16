@@ -12,15 +12,14 @@ bash
 Copy code
 *                pip install mysql-connector-python
 Database Schema
-** news Table:
 
+** news Table:
 * portalid (int)
 * town (varchar)
 * news (text)
 * date (date)
   
 **  kf_docmnt Table:
-
 * portalid (int)
 * town (varchar)
 * news (text)
@@ -32,20 +31,19 @@ Ensure that both tables are correctly set up in your NEWSINFO database to match 
 The script transfers data from the news table to the kf_docmnt table. It retrieves all rows from the news table and inserts them into the kf_docmnt table.
 
 ### How It Works
-Connect to the Database: Establishes a connection to the MySQL server and selects the NEWSINFO database.
-Retrieve Data: Executes a query to fetch all rows from the news table.
-Insert Data: Inserts the fetched rows into the kf_docmnt table.
-Error Handling: Catches and displays any errors that occur during execution.
-Resource Management: Ensures that database resources are properly closed after operations.
-Instructions
-Update Database Credentials: Modify the database connection parameters in the script to match your MySQL server settings.
-Run the Script: Execute the Python script to perform the data transfer.
-Verify Data: Check the kf_docmnt table to ensure the data has been successfully transferred.
-Error Handling
-Connection Errors: Handles issues related to connecting to the MySQL server and provides relevant error messages.
-Query Execution Errors: Captures errors that occur during SQL query execution and outputs informative messages.
-License
-This project is licensed under the MIT License. For details, see the LICENSE file.
+1. Connect to the Database: Establishes a connection to the MySQL server and selects the NEWSINFO database.
+2. Retrieve Data: Executes a query to fetch all rows from the news table.
+3. Insert Data: Inserts the fetched rows into the kf_docmnt table.
+4. Error Handling: Catches and displays any errors that occur during execution.
+5. Resource Management: Ensures that database resources are properly closed after operations.
+ ### Instructions
+1. Update Database Credentials: Modify the database connection parameters in the script to match your MySQL server settings.
+2. Run the Script: Execute the Python script to perform the data transfer.
+3.Verify Data: Check the kf_docmnt table to ensure the data has been successfully transferred.
+### Error Handling
+*  Connection Errors: Handles issues related to connecting to the MySQL server and provides relevant error messages.
+* Query Execution Errors: Captures errors that occur during SQL query execution and outputs informative messages.
+
 
 Contact
-For any questions or feedback, please contact your-email@example.com.
+For any questions or feedback, please contact sayprincekumar20@gmail.com
